@@ -1,13 +1,13 @@
 class Solution(object):
-  def twosum(self, nums, target):
-    seen = {}
-    for i in range(len(nums)): 
-      number = nums[i] 
-      difference = target - number 
-      if difference in seen: 
-        return [seen(difference), i] 
-      else:
-        seeen[number] = i 
+    def twoSum(self, nums, target):
+        seen = {}
+        for i in range(len(nums)):
+            number = nums[i]
+            difference = target - number
+            if difference in seen:
+                return [seen[difference], i]
+            else:
+                seen[number] = i
 
 # Explanation: 
 # 1. we create an empty dictionary *seen{}* to store the numbers we have already seen
