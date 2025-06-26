@@ -1,14 +1,20 @@
 class Solution(object):
   def twosum(self, nums, target):
-    seen = {} #creating an empty dictionary to store the numbers which are seen before
-    for i in range(len(nums)): #going through each indexes
-      number = nums[i] #getting the number of the current index
-      difference = target - number #checking the difference between the required target and the number we get from the index
-      if difference in seen: #if the difference calculated exists in the seen dictionary
-        return [seen(difference), i] # we will return the difference aswell as the number found
+    seen = {}
+    for i in range(len(nums)): 
+      number = nums[i] 
+      difference = target - number 
+      if difference in seen: 
+        return [seen(difference), i] 
       else:
-        seeen[number] = i #else if difference doesnt exist in seen then we will add this difference in the seen
+        seeen[number] = i 
 
-# the code runs in O(N) time complexity
-# i added comments with each line explaining the working and need of each line
-# feel free to reach out to me if you need help or there is some error or need of modifications
+# Explanation: 
+# 1. we create an empty dictionary *seen{}* to store the numbers we have already seen
+# 2. we then run a for loop to go throgh each indexes
+# 3. then we fetch the number at the current index
+# 4. we calculate the difference between the fetched number and the target required
+# 5. we check if that difference number is in the seen dictionary
+# 6. if it exists in the seen dictionary we will return that difference aswell as the number at that current index
+# 7. if the difference is not found, then we will add that difference in the seen dictionary and will move to the next index
+# Time Complexity: O(n)
