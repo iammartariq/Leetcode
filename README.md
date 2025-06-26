@@ -14,7 +14,9 @@
 #### Time Complexity: O(n)
 #### Space Complexity: O(n)
 
-### 09. 
+---------------------------------
+
+### 09. Palindrome Numbers
 #### code: https://github.com/iammartariq/Leetcode/blob/main/9.%20Palindrome%20Number.py
 #### Explanation:
 1. palindrome is any number which remains same if we invert it: for example 121 
