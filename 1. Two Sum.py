@@ -1,7 +1,7 @@
 class Solution(object):
   def twosum(self, nums, target):
     seen = {} #creating an empty dictionary to store the numbers which are seen before
-    for i in range(len(nums)): #going through each indexs
+    for i in range(len(nums)): #going through each indexes
       number = nums[i] #getting the number of the current index
       difference = target - number #checking the difference between the required target and the number we get from the index
       if difference in seen: #if the difference calculated exists in the seen dictionary
